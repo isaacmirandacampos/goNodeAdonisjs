@@ -1,5 +1,5 @@
 "use strict";
-
+const Antl = use("Antl");
 class FortPassword {
   get validateAll() {
     return true;
@@ -10,6 +10,10 @@ class FortPassword {
       email: "required|email",
       redirect_url: "required|url"
     };
+  }
+
+  get messages() {
+    return Antl.list("validation");
   }
 }
 

@@ -11,7 +11,6 @@ Route.post("passwords", "ForgotPasswordController.store").validator(
 Route.put("passwords", "ForgotPasswordController.update").validator(
   "ResetPassword"
 );
-
 Route.get("files/:id", "FileController.show");
 
 Route.group(() => {
